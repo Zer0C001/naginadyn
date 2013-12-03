@@ -2,6 +2,7 @@
 import sys
 f=open('/var/run/inadyn/inadyn.cache','r')
 inadyn_ip=f.read()
+f.close()
 ips={'k':(),'w':()}
 nextarg=''
 for arg in sys.argv:
